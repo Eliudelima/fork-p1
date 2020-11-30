@@ -1,0 +1,4 @@
+<h3>Minha carteira</h3>
+<input type="number" [(ngModel)]="valor" step="0.01" />
+<button (click)="negociar()">Comprar / vender</button>
+<h3>{{bitcoinService.myBitcoins | number}} bitcoin$ (={{getBRL() | currency:'BRL'}})</h3>
